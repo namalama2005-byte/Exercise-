@@ -1,13 +1,3 @@
-#Exercise1 in part 3
-#Powers of base n
-print("    ")
-upper_limit = int(input("Upper limit: "))
-Base = int(input("Base: "))
-num = 1
-while num <= upper_limit:
-    print(num)
-    num *= Base
-
     
 #example
 print( )
@@ -114,4 +104,90 @@ print(same_chars("programmer", 6, 7)) # True
 print(same_chars("programmer", 0, 4)) # False
 
 # the second index is not within the string
+
 print(same_chars("programmer", 0, 12)) # False
+
+
+#Change the value of an item
+print(" ")
+
+
+Lists = [1, 2, 3, 4, 5]
+while True :
+    index = int(input("index. "))
+    if index < 0:
+        break
+    new_value = int(input("New Value. "))
+
+    Lists[index] = new_value
+    print(Lists)
+
+
+
+
+
+
+#Add items to a list
+ITEM = int(input("how many items? "))
+ITEM_1 = int(input("ITEM 1: "))
+ITEM_2 = int(input("ITEM 2: "))
+ITEM_3 = int(input("ITEM 3: "))
+
+ITEMS = [ITEM_1, ITEM_2, ITEM_3 ]
+print(ITEMS)
+
+
+
+#Addition and removal  
+items = []
+
+print(f"The list is now {items}")
+
+while True:
+    choice = input("add, remove or exit: ")
+
+    if choice == "add":
+        if items:
+            items.append(items[-1] + 1)
+        else:
+            items.append(1)
+        print(f"The list is now {items}")
+
+    elif choice == "remove":
+        items.pop()
+        print(f"The list is now {items}")
+
+    elif choice == "x":
+        print("Bye!")
+        break
+        
+
+#Addition and removal
+List = []
+while True :
+
+    word = input("WORD: ")
+    
+    if word in List:
+        print(f'you write {len(List)} difference word')
+        break
+
+    List.append(word)
+
+
+
+
+#Addition and removal
+print('')
+value = []
+while True:
+    new_item = int(input('NEW ITEM: '))
+    if new_item == 0 :
+        print('bye!')
+        break
+
+    value.append(new_item)
+    
+    print(f'the list now: {value}')
+    print(f'the list in order: {sorted(value)}')
+    
