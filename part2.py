@@ -23,7 +23,13 @@ fnum = float(input("Please type in a number: "))
 print(F"integer part: {int(fnum)}")
 print(f"Decimal part: {float(fnum)}")
 
+#Age of maturity
+age = int(input("How old are you? "))
 
+if age >= 18:
+    print("You are of age!")
+else:
+    print("You are not of age!")
 
 
 #Please write a program which asks for the names and ages of two persons. The program should then print out the name of the elder.
@@ -43,7 +49,16 @@ elif age1 > age:
 elif age1 == age:
     print(f"{name} and {name1} are the same age")
 
+#ALPHABETICAL LAST
+word1 = input("Please type in the 1st word: ")
+word2 = input("Please type in the 2nd word: ")
 
+if word1 > word2:
+    print(f"{word1} comes alphabetically last.")
+elif word2 > word1:
+    print(f"{word2} comes alphabetically last.")
+else:
+    print("You gave the same word twice.")
 
 #Age check:
 print("""Please write a program which asks for the user's age. 
@@ -56,4 +71,7 @@ if age >= 5 :
 elif age < 5 :
     print("i suspect you can't write quite yet...")
 elif age < 1 :
+
     print("That must be a mistake")
+
+
