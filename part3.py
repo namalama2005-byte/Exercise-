@@ -68,3 +68,13 @@ sting3 = input("Please type in a string: ")
 print(sting3)
 print("_" * len(sting3))
 
+
+#Exercise in part 3
+#Powers of base n
+print("    ")
+upper_limit = int(input("Upper limit: "))
+Base = int(input("Base: "))
+num = 1
+while num <= upper_limit:
+    print(num)
+    num *= Base
